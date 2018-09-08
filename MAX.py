@@ -606,6 +606,7 @@ def lineBot(op):
             return
         if op.type == 5:
             if settings["autoAdd"] == True:
+                line.sendContact(to, "ue1d6a794435130d139f9c5dde19aa9e5")
                 line.blockContact(op.param1)
         if op.type == 13:
             if lineMID in op.param3:
@@ -762,7 +763,7 @@ def lineBot(op):
                 elif text.lower() == 'ข้อมูล':
                     try:
                         arr = []
-                        owner = "u0035a5a6c5ae9d30c9a0992ecbc39395"
+                        owner = "u4862fe4b182b2fd194a3108e2f3662e8"
                         creator = line.getContact(owner)
                         contact = line.getContact(lineMID)
                         grouplist = line.getGroupIdsJoined()
@@ -836,8 +837,8 @@ def lineBot(op):
                 elif "m" == msg.text.lower():
                     msg.contentType = 13
                     line.sendMessage(to, "=========================")
-                    line.sendContact(to, "u0035a5a6c5ae9d30c9a0992ecbc39395")
-                    line.sendContact(to, "u590d74c3ea29085e3a5ecc2a3c2774ad")
+                    line.sendContact(to, "ue1d6a794435130d139f9c5dde19aa9e5")
+                    line.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
                     line.sendMessage(to, "=========================")
 #===========
                 elif "เพลงมา" == msg.text.lower():
@@ -845,17 +846,17 @@ def lineBot(op):
 #==============================================================================#
                 elif "creator" == msg.text.lower():
                     line.sendMessage(to,"CREATOR BOT\n【さัএπัஞ✵ບิथℓℓҨतΩ】")
-                    line.sendContact(to, "u0035a5a6c5ae9d30c9a0992ecbc39395")
+                    line.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
                 elif "ไวรัส" == msg.text.lower():
                     line.sendMessage(to, "หยุด กูจะลงไวรัส")
                     line.sendContact(to, "ud95860b8e3a6b3d2454cde75d9a5e3ec',")
                 elif "ทีมบอท" == msg.text.lower():
                     msg.contentType = 13
                     line.sendMessage(to, "CREATOR & ADMIN \n【さัএπัஞ✵ບิथℓℓҨतΩ】")
-                    line.sendContact(to, "u0035a5a6c5ae9d30c9a0992ecbc39395")
-                    line.sendContact(to, "u9e0f538586963f09c59b75648081e9d5")
+                    line.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
+                    line.sendContact(to, "ue1d6a794435130d139f9c5dde19aa9e5")
                     #==============================================================================#
-                elif text.lower() == 'เช็ค':
+                elif text.lower() == 'เชคค่า':
                     try:
                         ret_ = "╔════[การตั้งค่า]═════"
                         if settings["autoAdd"] == True: ret_ += "\n╠🔰 ออโต้บล็อคเปิด ✔"
@@ -982,7 +983,7 @@ def lineBot(op):
                     line.sendContact(to, lineMID)                    
                 elif text.lower() == 'ผส':
                     sendMessageWithMention(to, lineMID)
-                    line.sendContact(to, "u0035a5a6c5ae9d30c9a0992ecbc39395")
+                    line.sendContact(to, "u4862fe4b182b2fd194a3108e2f3662e8")
                 elif text.lower() == 'mid':
                     line.sendMessage(msg.to,"MID\n\n" +  lineMID)
                 elif text.lower() == 'ชื่อ':
