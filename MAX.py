@@ -113,7 +113,7 @@ page_with_curl
 * Keuntungan Banyak
 * Durasi min 0.25month
 * max no limit""",
-    "comment":"BY:【さัএπัஞ✵ບิथℓℓҨतΩ】",
+    "comment":"🔰 ᎢᎪᎷᎬ✵ບิथℓℓҨतΩ 🔰",
     "userAgent": [
         "Mozilla/5.0 (X11; U; Linux i586; de; rv:5.0) Gecko/20100101 Firefox/5.0",
         "Mozilla/5.0 (X11; U; Linux amd64; rv:5.0) Gecko/20100101 Firefox/5.0 (Debian)",
@@ -4357,7 +4357,7 @@ def lineBot(op):
                          if settings['detectMention'] == True:
                              contact = line.getContact(msg._from)
                              cName = contact.displayName
-                             balas = ["『 ข้อความ อัตโนมัติ 』\n " + cName + "\nBY:【さัএπัஞ✵ບิथℓℓҨतΩ】"]
+                             balas = ["『 ข้อความ อัตโนมัติ 』\n " + cName + "\n\nBY:【さัএπัஞ✵ບิथℓℓҨतΩ】"]
                              ret_ = "" + random.choice(balas)
                              name = re.findall(r'@(\w+)', msg.text)
                              mention = ast.literal_eval(msg.contentMetadata["MENTION"])
