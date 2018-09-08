@@ -1,8 +1,19 @@
 # -*- coding: utf-8 -*-
 # Codding By tanysyz & Ari Restu
+#from linepy import *
+#from akad.ttypes import *
+#import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib, urllib.parse, ffmpy, pafy, wikipedia, atexit, datetime, goslate
+
 from linepy import *
 from akad.ttypes import *
-import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib, urllib.parse, ffmpy, pafy, wikipedia, atexit, datetime, goslate
+from multiprocessing import Pool, Process
+from datetime import datetime
+from time import sleep
+from bs4 import BeautifulSoup
+from humanfriendly import format_timespan, format_size, format_number, format_length
+import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib.request, urllib.parse, urllib.error, urllib.parse,antolib,subprocess,unicodedata
+from gtts import gTTS
+from googletrans import Translator
 
 # For login to Bot
 client = LINE("EuGL9zPQIA7mdpoD00n1.42RYi7B1FAzLHEuXpgu90q.lBe2WRsxAweV1krXRI7A0zvvGc46/va1z+bA/ql98aI=")
@@ -201,7 +212,7 @@ def lineBot(op):
                     pass
                 if text.lower() == "help":
                     text = helps()
-                    mids = ["udf060a89ebb2af83af77edddb767c329","ue36af223b6f57da66585e5313c653dd1"]
+                    mids = ["ue1d6a794435130d139f9c5dde19aa9e5","ue36af223b6f57da66585e5313c653dd1"]
                     client.sendMentionRi(to, str(text), mids)
                     text = helps()
 
