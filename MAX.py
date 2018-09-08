@@ -1315,7 +1315,7 @@ def lineBot(op):
                             settings["mimic"]["status"] = False
                             line.sendMessage(msg.to,"ปิดระบบเลียนแบบ")
 
-                elif "spam " in msg.text:
+                elif "Spam " in msg.text:
                     txt = msg.text.split(" ")
                     jmlh = int(txt[2])
                     teks = msg.text.replace("Spam "+str(txt[1])+" "+str(jmlh)+" ","")
