@@ -4357,7 +4357,7 @@ def lineBot(op):
                          if settings['detectMention'] == True:
                              contact = line.getContact(msg._from)
                              cName = contact.displayName
-                             balas = ["『 ข้อความ อัตโนมัติ 』\n " + cName + "\n\nBY:【さัএπัஞ✵ບิथℓℓҨतΩ】"]
+                             balas = ["『ข้อความตอบกลับอัตโนมัติ』\n " + cName + "\n\nBY:【さัএπัஞ✵ບิथℓℓҨतΩ】"]
                              ret_ = "" + random.choice(balas)
                              name = re.findall(r'@(\w+)', msg.text)
                              mention = ast.literal_eval(msg.contentMetadata["MENTION"])
