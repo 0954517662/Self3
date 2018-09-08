@@ -1,22 +1,22 @@
 {
     "Nn": true,
-    "Respontag": "แทคบ่อยๆนี้อ่อยหรือจะทวงหนี้ค่ะ...!!!",
+    "Respontag": "แทคทามมาย\nเค้าเขินนะเธอ 😊",
     "Sd": true,
-    "autoAdd": false,
+    "autoAdd": true,
     "autoCancel": {
         "members": 5,
         "on": true
     },
-    "autoJoin": false,
+    "autoJoin": true,
     "autoLeave": false,
     "autoRead": false,
     "blacklist": {},
-    "bye": "ไปสะเเระ...รีบงายมรึง!!!",
-    "cName": "",
-    "cNames": "",
+    "bye": "บาย บาย ไว้เจอกันใหม่นะ 😦",
+    "cName": "™ധู้ざຣ้ণს✚ປิʨℓℓҨබମ™",
+    "cNames": "™ധู้ざຣ้ণს✚ປิʨℓℓҨබମ™",
     "checkSticker": false,
     "clock": false,
-    "comment": "AUTOLIKE В¥.VąŁķỳŗįè тєάм ңάĉќ",
+    "comment": "AUTO LIKE BY: ™ധู้ざຣ้ণს✚ປิʨℓℓҨබମ™",
     "commentBlack": {},
     "dblack": false,
     "dblacklist": false,
@@ -33,7 +33,7 @@
     },
     "pname": {},
     "pnharfbot": {},
-    "potoMention": false,
+    "potoMention": true,
     "pro_name": {},
     "userAgent": [
         "Mozilla/5.0 (X11; U; Linux i586; de; rv:5.0) Gecko/20100101 Firefox/5.0",
@@ -59,6 +59,6 @@
     ],
     "wblack": false,
     "wblacklist": false,
-    "welcome": "ดีค่ะ..อิสัส!!!",
+    "welcome": "สวัสดียินดีต้อนรับ 😊",
     "winvite": false
 }
