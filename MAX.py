@@ -409,7 +409,8 @@ def listgrup():
 ╠🔰►แบน @
 ╠🔰►ยกเลิก @
 ╠🔰►ล้างแบน @
-╠🔰►เตะแบน
+╠🔰►ไล่ดำ
+╠🔰►ล้างแบน
 ╠🔰►เช็คไอดี
 ╰═【さัএπัஞ✵ບิथℓℓҨतΩ】"""
     return listGrup
@@ -484,7 +485,7 @@ def helpset():
 ╠🔰►ยกเลิก @
 ╠🔰►Nutmic on ↔ off
 ╠🔰►เชคเลียนแบบ
-╠🔰►เตะแบน
+╠🔰►ไล่ดำ
 ╠🔰►ชื่อ;
 ╠🔰►ตัส;
 ╠🔰►Spam on ↔ off
@@ -817,7 +818,7 @@ def lineBot(op):
                 elif "สปีด" == msg.text.lower():
                     line.sendMessage(to,"「ความเร็ว...」\n███▒39%\n██████▒69%\n██████████▒99%\n0.0000000000000001 second")
                     line.sendMessage(to,"0.0000000000000001 second")  
-                    line.sendMessage(to,"(｡◕‿◕｡)")
+                    #line.sendMessage(to,"(｡◕‿◕｡)")
 #===========
                 elif "เทส" == msg.text.lower():
                     line.sendMessage(to,"【さัএπัஞ✵ບิथℓℓҨतΩ】")
@@ -4003,17 +4004,17 @@ def lineBot(op):
                                del settings["blacklist"][target]
                                f=codecs.open('st2__b.json','w','utf-8')
                                json.dump(settings["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                               line.sendMessage(msg.to,"ทำการล้างแบน สำเร็จ❋")
+                               line.sendMessage(msg.to,"ทำการล้างดำ สำเร็จ")
                                print ("Unbanned User")
                            except:
                                line.sendMessage(msg.to,"ผิดพลาด")
                 
-                elif msg.text in ["เช็คแบน"]:
+                elif msg.text in ["เชคดำ"]:
                   if msg._from in Family:
                     if settings["blacklist"] == {}:
-                        line.sendMessage(msg.to,"ไม่มีผู้ไช้ที่ติดแบน") 
+                        line.sendMessage(msg.to,"ไม่มีผู้ไช้ที่ติดดำ") 
                     else:
-                        line.sendMessage(msg.to,"รายชื่อผู้ไช้ที่ติดแบน")
+                        line.sendMessage(msg.to,"รายชื่อผู้ไช้ที่ติดดำ")
                         mc = "รายชื่อ\n"
                         for mi_d in settings["blacklist"]:
                             mc += "➠ " + line.getContact(mi_d).displayName + " \n"
@@ -4356,7 +4357,7 @@ def lineBot(op):
                          if settings['detectMention'] == True:
                              contact = line.getContact(msg._from)
                              cName = contact.displayName
-                             balas = ["『ข้อความ อัตโนมัติ』\n " + cName + "\n\nBY:【さัএπัஞ✵ບิथℓℓҨतΩ】"]
+                             balas = ["『 ข้อความ อัตโนมัติ 』\n " + cName + "\nBY:【さัএπัஞ✵ບิथℓℓҨतΩ】"]
                              ret_ = "" + random.choice(balas)
                              name = re.findall(r'@(\w+)', msg.text)
                              mention = ast.literal_eval(msg.contentMetadata["MENTION"])
