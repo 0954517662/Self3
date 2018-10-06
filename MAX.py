@@ -367,11 +367,12 @@ def myhelp():
 ╠🔰►คำสั่ง4 ↔ คำสั่งมีเดีย
 ╠🔰►คำสั่ง5 ↔ คำสั่งสิริ
 ╠🔰►คำสั่ง6 ↔ คำสั่งแปลภาษา
-╠🔰►บอทออน
+╠🔰►ออน
 ╠🔰►แทค
 ╠🔰►ทีมบอท
+╠🔰►รีบูส
 ╠🔰►ผส
-╠🔰►Sp
+╠🔰►สปีด
 ╚═【さัএπัஞ✵ບิथℓℓҨतΩ】
 """
     return myHelp
@@ -488,7 +489,7 @@ def helpset():
 ╠🔰►ยกเลิก @
 ╠🔰►Nutmic on ↔ off
 ╠🔰►เชคเลียนแบบ
-╠🔰►ไล่ดำ
+╠🔰►ล่า
 ╠🔰►ชื่อ:
 ╠🔰►ตัส:
 ╠🔰►Spam on ↔ off
@@ -3091,7 +3092,7 @@ def lineBot(op):
                         if hr == day[i]: hasil = hari[i]
                     for k in range(0, len(bulan)):
                         if bln == str(k): bln = bulan[k-1]
-                    readTime = "【さัএπัஞ✵ບิथℓℓҨतΩ】\n\n🌿🌸🍃🌸🍃🌸🍃🌸🍃🌸🍃🌸🌿" + "\n\n🍁" + hasil + "\n🍁 ที่ " + timeNow.strftime('%d') + " - " + bln + " - " + timeNow.strftime('%Y')  + "\n🍁 เวลา : [ " + timeNow.strftime('%H:%M:%S') + " ]" + "🌿🌸🍃🌸🍃🌸🍃🌸🍃🌸🍃🌸🌿" + "\n\nBY: ❋VҜ ŚẾL₣ВΌŦ"
+                    readTime = "【さัএπัஞ✵ບิथℓℓҨतΩ】\n\n🐯🐯🐯🐯🐯🐯🐯🐯🐯🐯🐯" + "\n\n🍁" + hasil + "\n🍁 ที่ " + timeNow.strftime('%d') + " - " + bln + " - " + timeNow.strftime('%Y')  + "\n🍁 เวลา : [ " + timeNow.strftime('%H:%M:%S') + " ]" + "🐯🐯🐯🐯🐯🐯🐯🐯🐯🐯🐯" + "\n\nBY:SELFBOT MAX"
                     line.sendMessage(msg.to, readTime)
 
                 elif "screenshotwebsite " in msg.text.lower():
@@ -3105,7 +3106,7 @@ def lineBot(op):
 
                 elif "หารูป " in msg.text.lower():
                     separate = msg.text.split(" ")
-                    search = msg.text.replace(separate[0] + " ","")
+                    search = msg.text.replace(separate[0] + "หารูป ","")
                     with requests.session() as web:
                         web.headers["User-Agent"] = random.choice(settings["userAgent"])
                         r = web.get("http://rahandiapi.herokuapp.com/imageapi?key=betakey&q={}".format(urllib.parse.quote(search)))
@@ -3119,7 +3120,7 @@ def lineBot(op):
                             line.sendImageWithURL(to, str(path))
                 elif "รูปการ์ตูน " in msg.text.lower():
                     separate = msg.text.split(" ")
-                    search = msg.text.replace(separate[0] + " ","")
+                    search = msg.text.replace(separate[0] + "รูปการ์ตูน ","")
                     with requests.session() as web:
                         web.headers["User-Agent"] = random.choice(settings["userAgent"])
                         r = web.get("http://rahandiapi.herokuapp.com/imageapi?key=betakey&q={}".format(urllib.parse.quote(search)))
@@ -3134,7 +3135,7 @@ def lineBot(op):
       
                 elif "ยูทูป " in msg.text.lower():
                     sep = text.split(" ")
-                    search = text.replace(sep[0] + " ","")
+                    search = text.replace(sep[0] + "ยูทูป ","")
                     params = {"search_query": search}
                     with requests.session() as web:
                         web.headers["User-Agent"] = random.choice(settings["userAgent"])
@@ -3153,7 +3154,7 @@ def lineBot(op):
                         
                 elif "google " in msg.text.lower():
                     sep = text.split(" ")
-                    search = text.replace(sep[0] + " ","")
+                    search = text.replace(sep[0] + "google ","")
                     params = {"search_query": search}
                     with requests.session() as web:
                         web.headers["User-Agent"] = random.choice(settings["userAgent"])
@@ -3299,9 +3300,9 @@ def lineBot(op):
 
                 elif msg.text == "ขอหื่น":
                 	line.sendMessage(receiver,">nekopoi.host\n>sexvideobokep.com\n>memek.com\n>pornktube.com\n>faketaxi.com\n>videojorok.com\n>watchmygf.mobi\n>xnxx.com\n>pornhd.com\n>xvideos.com\n>vidz7.com\n>m.xhamster.com\n>xxmovies.pro\n>youporn.com\n>pornhub.com\n>youjizz.com\n>thumzilla.com\n>anyporn.com\n>brazzers.com\n>redtube.com\n>youporn.com")
-                elif msg.text == ".ประ":
+                elif msg.text == "ประกาศ":
                 	line.sendMessage(msg.to,str(settings["message1"]))
-                elif msg.text.lower() == '.ดึงแอด':
+                elif msg.text.lower() == 'ดึงแอด':
                 	if msg.toType == 2:                
                            ginfo = line.getGroup(receiver)
                            try:
@@ -3408,9 +3409,9 @@ def lineBot(op):
                          settings["Respontag"] = spl
                          line.sendMessage(msg.to, "BY:【さัএπัஞ✵ບิथℓℓҨतΩ】\nตั้งข้อความตอบแทคแล้ว\n\n{}".format(str(spl)))
                          
-                elif '.ทักเตะ: ' in msg.text:
+                elif 'ทักเตะ: ' in msg.text:
                   if msg._from in admin:
-                     spl = msg.text.replace('.ทักเตะ: ','')
+                     spl = msg.text.replace('ทักเตะ: ','')
                      if spl in [""," ","\n",None]:
                          line.sendMessage(msg.to, "ตั้งข้อความคนคนลบสมาชิดเรียบร้อย")
                      else:
@@ -3528,7 +3529,7 @@ def lineBot(op):
                                          line.sendMessage(receiver,"Group cleanse")
                                          print ("Cleanse Group")
 
-                elif msg.text in ["ไล่ดำ"]:
+                elif msg.text in ["ล่า"]:
                 	if msg.toType == 2:
                          group = line.getGroup(receiver)
                          gMembMids = [contact.mid for contact in group.members]
